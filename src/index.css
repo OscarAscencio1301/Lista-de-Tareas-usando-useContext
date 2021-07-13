@@ -1,13 +1,74 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contain{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.item1{
+  flex: 0 0 calc(30% - 1rem);
+  background-color: orangered;
+}
+.item2{
+  flex: 1;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  gap: 2rem;
+  
+}
+.titulo{
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+.tituloPrincipal{
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+a{
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.5s;
+}
+a:hover{
+  transform: scale(1.05);
+  color: white;
+}
+.activo{
+  color: yellow;
+}
+.datos{
+  padding: 0 4rem;
+}
+p{
+  margin: 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boton{
+  margin-left: 1rem;
+}
+input{
+  font-size: 1.8rem;
+}
+.completado{
+  text-decoration: line-through;
 }
